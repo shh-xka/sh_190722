@@ -4,7 +4,7 @@ var __DEFINE__ = function(modId, func, req) { var m = { exports: {} }; __MODS__[
 var __REQUIRE__ = function(modId, source) { if(!__MODS__[modId]) return require(source); if(!__MODS__[modId].status) { var m = { exports: {} }; __MODS__[modId].status = 1; __MODS__[modId].func(__MODS__[modId].req, m, m.exports); if(typeof m.exports === "object") { Object.keys(m.exports).forEach(function(k) { __MODS__[modId].m.exports[k] = m.exports[k]; }); if(m.exports.__esModule) Object.defineProperty(__MODS__[modId].m.exports, "__esModule", { value: true }); } else { __MODS__[modId].m.exports = m.exports; } } return __MODS__[modId].m.exports; };
 var __REQUIRE_WILDCARD__ = function(obj) { if(obj && obj.__esModule) { return obj; } else { var newObj = {}; if(obj != null) { for(var k in obj) { if (Object.prototype.hasOwnProperty.call(obj, k)) newObj[k] = obj[k]; } } newObj.default = obj; return newObj; } };
 var __REQUIRE_DEFAULT__ = function(obj) { return obj && obj.__esModule ? obj.default : obj; };
-__DEFINE__(1581324618262, function(require, module, exports) {
+__DEFINE__(1581492155525, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -584,8 +584,8 @@ const react = {
   buildChildren: _buildChildren.default
 };
 exports.react = react;
-}, function(modId) {var map = {"./validators/react/isReactComponent":1581324618263,"./validators/react/isCompatTag":1581324618268,"./builders/react/buildChildren":1581324618269,"./asserts/assertNode":1581324618288,"./asserts/generated":1581324618290,"./builders/flow/createTypeAnnotationBasedOnTypeof":1581324618291,"./builders/flow/createUnionTypeAnnotation":1581324618292,"./builders/generated":1581324618271,"./clone/cloneNode":1581324618294,"./clone/clone":1581324618295,"./clone/cloneDeep":1581324618296,"./clone/cloneWithoutLoc":1581324618297,"./comments/addComment":1581324618298,"./comments/addComments":1581324618299,"./comments/inheritInnerComments":1581324618300,"./comments/inheritLeadingComments":1581324618302,"./comments/inheritsComments":1581324618303,"./comments/inheritTrailingComments":1581324618304,"./comments/removeComments":1581324618305,"./constants/generated":1581324618306,"./constants":1581324618278,"./converters/ensureBlock":1581324618307,"./converters/toBindingIdentifierName":1581324618309,"./converters/toBlock":1581324618308,"./converters/toComputedKey":1581324618312,"./converters/toExpression":1581324618313,"./converters/toIdentifier":1581324618310,"./converters/toKeyAlias":1581324618314,"./converters/toSequenceExpression":1581324618318,"./converters/toStatement":1581324618321,"./converters/valueToNode":1581324618322,"./definitions":1581324618273,"./modifications/appendToMemberExpression":1581324618323,"./modifications/inherits":1581324618324,"./modifications/prependToMemberExpression":1581324618325,"./modifications/removeProperties":1581324618317,"./modifications/removePropertiesDeep":1581324618315,"./modifications/flow/removeTypeDuplicates":1581324618293,"./retrievers/getBindingIdentifiers":1581324618320,"./retrievers/getOuterBindingIdentifiers":1581324618326,"./traverse/traverse":1581324618327,"./traverse/traverseFast":1581324618316,"./utils/shallowEqual":1581324618267,"./validators/is":1581324618275,"./validators/isBinding":1581324618328,"./validators/isBlockScoped":1581324618329,"./validators/isImmutable":1581324618331,"./validators/isLet":1581324618330,"./validators/isNode":1581324618289,"./validators/isNodesEquivalent":1581324618332,"./validators/isPlaceholderType":1581324618277,"./validators/isReferenced":1581324618333,"./validators/isScope":1581324618334,"./validators/isSpecifierDefault":1581324618335,"./validators/isType":1581324618276,"./validators/isValidES3Identifier":1581324618336,"./validators/isValidIdentifier":1581324618311,"./validators/isVar":1581324618337,"./validators/matchesPattern":1581324618265,"./validators/validate":1581324618280,"./validators/buildMatchMemberExpression":1581324618264,"./validators/generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618263, function(require, module, exports) {
+}, function(modId) {var map = {"./validators/react/isReactComponent":1581492155526,"./validators/react/isCompatTag":1581492155531,"./builders/react/buildChildren":1581492155532,"./asserts/assertNode":1581492155551,"./asserts/generated":1581492155553,"./builders/flow/createTypeAnnotationBasedOnTypeof":1581492155554,"./builders/flow/createUnionTypeAnnotation":1581492155555,"./builders/generated":1581492155534,"./clone/cloneNode":1581492155557,"./clone/clone":1581492155558,"./clone/cloneDeep":1581492155559,"./clone/cloneWithoutLoc":1581492155560,"./comments/addComment":1581492155561,"./comments/addComments":1581492155562,"./comments/inheritInnerComments":1581492155563,"./comments/inheritLeadingComments":1581492155565,"./comments/inheritsComments":1581492155566,"./comments/inheritTrailingComments":1581492155567,"./comments/removeComments":1581492155568,"./constants/generated":1581492155569,"./constants":1581492155541,"./converters/ensureBlock":1581492155570,"./converters/toBindingIdentifierName":1581492155572,"./converters/toBlock":1581492155571,"./converters/toComputedKey":1581492155575,"./converters/toExpression":1581492155576,"./converters/toIdentifier":1581492155573,"./converters/toKeyAlias":1581492155577,"./converters/toSequenceExpression":1581492155581,"./converters/toStatement":1581492155584,"./converters/valueToNode":1581492155585,"./definitions":1581492155536,"./modifications/appendToMemberExpression":1581492155586,"./modifications/inherits":1581492155587,"./modifications/prependToMemberExpression":1581492155588,"./modifications/removeProperties":1581492155580,"./modifications/removePropertiesDeep":1581492155578,"./modifications/flow/removeTypeDuplicates":1581492155556,"./retrievers/getBindingIdentifiers":1581492155583,"./retrievers/getOuterBindingIdentifiers":1581492155589,"./traverse/traverse":1581492155590,"./traverse/traverseFast":1581492155579,"./utils/shallowEqual":1581492155530,"./validators/is":1581492155538,"./validators/isBinding":1581492155591,"./validators/isBlockScoped":1581492155592,"./validators/isImmutable":1581492155594,"./validators/isLet":1581492155593,"./validators/isNode":1581492155552,"./validators/isNodesEquivalent":1581492155595,"./validators/isPlaceholderType":1581492155540,"./validators/isReferenced":1581492155596,"./validators/isScope":1581492155597,"./validators/isSpecifierDefault":1581492155598,"./validators/isType":1581492155539,"./validators/isValidES3Identifier":1581492155599,"./validators/isValidIdentifier":1581492155574,"./validators/isVar":1581492155600,"./validators/matchesPattern":1581492155528,"./validators/validate":1581492155543,"./validators/buildMatchMemberExpression":1581492155527,"./validators/generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155526, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -600,8 +600,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const isReactComponent = (0, _buildMatchMemberExpression.default)("React.Component");
 var _default = isReactComponent;
 exports.default = _default;
-}, function(modId) { var map = {"../buildMatchMemberExpression":1581324618264}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618264, function(require, module, exports) {
+}, function(modId) { var map = {"../buildMatchMemberExpression":1581492155527}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155527, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -617,8 +617,8 @@ function buildMatchMemberExpression(match, allowPartial) {
   const parts = match.split(".");
   return member => (0, _matchesPattern.default)(member, parts, allowPartial);
 }
-}, function(modId) { var map = {"./matchesPattern":1581324618265}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618265, function(require, module, exports) {
+}, function(modId) { var map = {"./matchesPattern":1581492155528}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155528, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -659,8 +659,8 @@ function matchesPattern(member, match, allowPartial) {
 
   return true;
 }
-}, function(modId) { var map = {"./generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618266, function(require, module, exports) {
+}, function(modId) { var map = {"./generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155529, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -5186,8 +5186,8 @@ function isSpreadProperty(node, opts) {
 
   return false;
 }
-}, function(modId) { var map = {"../../utils/shallowEqual":1581324618267}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618267, function(require, module, exports) {
+}, function(modId) { var map = {"../../utils/shallowEqual":1581492155530}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155530, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -5207,7 +5207,7 @@ function shallowEqual(actual, expected) {
   return true;
 }
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618268, function(require, module, exports) {
+__DEFINE__(1581492155531, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -5219,7 +5219,7 @@ function isCompatTag(tagName) {
   return !!tagName && /^[a-z]/.test(tagName);
 }
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618269, function(require, module, exports) {
+__DEFINE__(1581492155532, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -5251,8 +5251,8 @@ function buildChildren(node) {
 
   return elements;
 }
-}, function(modId) { var map = {"../../validators/generated":1581324618266,"../../utils/react/cleanJSXElementLiteralChild":1581324618270}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618270, function(require, module, exports) {
+}, function(modId) { var map = {"../../validators/generated":1581492155529,"../../utils/react/cleanJSXElementLiteralChild":1581492155533}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155533, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -5300,8 +5300,8 @@ function cleanJSXElementLiteralChild(child, args) {
 
   if (str) args.push((0, _generated.stringLiteral)(str));
 }
-}, function(modId) { var map = {"../../builders/generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618271, function(require, module, exports) {
+}, function(modId) { var map = {"../../builders/generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155534, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -6505,8 +6505,8 @@ function SpreadProperty(...args) {
   console.trace("The node type SpreadProperty has been renamed to SpreadElement");
   return SpreadProperty("SpreadProperty", ...args);
 }
-}, function(modId) { var map = {"../builder":1581324618272}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618272, function(require, module, exports) {
+}, function(modId) { var map = {"../builder":1581492155535}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155535, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -6549,8 +6549,8 @@ function builder(type, ...args) {
 
   return node;
 }
-}, function(modId) { var map = {"../definitions":1581324618273,"../validators/validate":1581324618280}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618273, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536,"../validators/validate":1581492155543}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155536, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -6650,8 +6650,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _toFastProperties.default)(_placeholders.PLACEHOLDERS_FLIPPED_ALIAS);
 const TYPES = Object.keys(_utils.VISITOR_KEYS).concat(Object.keys(_utils.FLIPPED_ALIAS_KEYS)).concat(Object.keys(_utils.DEPRECATED_KEYS));
 exports.TYPES = TYPES;
-}, function(modId) { var map = {"./core":1581324618274,"./es2015":1581324618281,"./flow":1581324618282,"./jsx":1581324618283,"./misc":1581324618284,"./experimental":1581324618286,"./typescript":1581324618287,"./utils":1581324618279,"./placeholders":1581324618285}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618274, function(require, module, exports) {
+}, function(modId) { var map = {"./core":1581492155537,"./es2015":1581492155544,"./flow":1581492155545,"./jsx":1581492155546,"./misc":1581492155547,"./experimental":1581492155549,"./typescript":1581492155550,"./utils":1581492155542,"./placeholders":1581492155548}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155537, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -7508,8 +7508,8 @@ exports.patternLikeCommon = patternLikeCommon;
     }
   }
 });
-}, function(modId) { var map = {"../validators/is":1581324618275,"../constants":1581324618278,"./utils":1581324618279}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618275, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/is":1581492155538,"../constants":1581492155541,"./utils":1581492155542}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155538, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -7545,8 +7545,8 @@ function is(type, node, opts) {
     return (0, _shallowEqual.default)(node, opts);
   }
 }
-}, function(modId) { var map = {"../utils/shallowEqual":1581324618267,"./isType":1581324618276,"./isPlaceholderType":1581324618277,"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618276, function(require, module, exports) {
+}, function(modId) { var map = {"../utils/shallowEqual":1581492155530,"./isType":1581492155539,"./isPlaceholderType":1581492155540,"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155539, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -7571,8 +7571,8 @@ function isType(nodeType, targetType) {
 
   return false;
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618277, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155540, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -7594,8 +7594,8 @@ function isPlaceholderType(placeholderType, targetType) {
 
   return false;
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618278, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155541, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -7646,7 +7646,7 @@ exports.BLOCK_SCOPED_SYMBOL = BLOCK_SCOPED_SYMBOL;
 const NOT_LOCAL_BINDING = Symbol.for("should not be considered a local binding");
 exports.NOT_LOCAL_BINDING = NOT_LOCAL_BINDING;
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618279, function(require, module, exports) {
+__DEFINE__(1581492155542, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -7929,8 +7929,8 @@ function defineType(type, opts = {}) {
 }
 
 const store = {};
-}, function(modId) { var map = {"../validators/is":1581324618275,"../validators/validate":1581324618280}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618280, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/is":1581492155538,"../validators/validate":1581492155543}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155543, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -7963,8 +7963,8 @@ function validateChild(node, key, val) {
   if (!validate) return;
   validate(node, key, val);
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618281, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155544, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -8432,8 +8432,8 @@ exports.classMethodOrDeclareMethodCommon = classMethodOrDeclareMethodCommon;
     }
   }
 });
-}, function(modId) { var map = {"./utils":1581324618279,"./core":1581324618274,"../validators/is":1581324618275}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618282, function(require, module, exports) {
+}, function(modId) { var map = {"./utils":1581492155542,"./core":1581492155537,"../validators/is":1581492155538}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155545, function(require, module, exports) {
 
 
 var _utils = _interopRequireWildcard(require("./utils"));
@@ -8892,8 +8892,8 @@ defineInterfaceishType("InterfaceDeclaration");
     id: (0, _utils.validateType)("Identifier")
   }
 });
-}, function(modId) { var map = {"./utils":1581324618279}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618283, function(require, module, exports) {
+}, function(modId) { var map = {"./utils":1581492155542}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155546, function(require, module, exports) {
 
 
 var _utils = _interopRequireWildcard(require("./utils"));
@@ -9055,8 +9055,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 (0, _utils.default)("JSXClosingFragment", {
   aliases: ["JSX", "Immutable"]
 });
-}, function(modId) { var map = {"./utils":1581324618279}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618284, function(require, module, exports) {
+}, function(modId) { var map = {"./utils":1581492155542}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155547, function(require, module, exports) {
 
 
 var _utils = _interopRequireWildcard(require("./utils"));
@@ -9090,8 +9090,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
     }
   }
 });
-}, function(modId) { var map = {"./utils":1581324618279,"./placeholders":1581324618285}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618285, function(require, module, exports) {
+}, function(modId) { var map = {"./utils":1581492155542,"./placeholders":1581492155548}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155548, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -9125,8 +9125,8 @@ Object.keys(PLACEHOLDERS_ALIAS).forEach(type => {
     PLACEHOLDERS_FLIPPED_ALIAS[alias].push(type);
   });
 });
-}, function(modId) { var map = {"./utils":1581324618279}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618286, function(require, module, exports) {
+}, function(modId) { var map = {"./utils":1581492155542}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155549, function(require, module, exports) {
 
 
 var _utils = _interopRequireWildcard(require("./utils"));
@@ -9349,8 +9349,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   },
   aliases: ["Expression", "Pureish", "Literal", "Immutable"]
 });
-}, function(modId) { var map = {"./utils":1581324618279,"./es2015":1581324618281}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618287, function(require, module, exports) {
+}, function(modId) { var map = {"./utils":1581492155542,"./es2015":1581492155544}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155550, function(require, module, exports) {
 
 
 var _utils = _interopRequireWildcard(require("./utils"));
@@ -9768,8 +9768,8 @@ const unionOrIntersection = {
     }
   }
 });
-}, function(modId) { var map = {"./utils":1581324618279,"./core":1581324618274,"./es2015":1581324618281}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618288, function(require, module, exports) {
+}, function(modId) { var map = {"./utils":1581492155542,"./core":1581492155537,"./es2015":1581492155544}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155551, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -9787,8 +9787,8 @@ function assertNode(node) {
     throw new TypeError(`Not a valid node of type "${type}"`);
   }
 }
-}, function(modId) { var map = {"../validators/isNode":1581324618289}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618289, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/isNode":1581492155552}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155552, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -9801,8 +9801,8 @@ var _definitions = require("../definitions");
 function isNode(node) {
   return !!(node && _definitions.VISITOR_KEYS[node.type]);
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618290, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155553, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11232,8 +11232,8 @@ function assertSpreadProperty(node, opts) {
   console.trace("The node type SpreadProperty has been renamed to SpreadElement");
   assert("SpreadProperty", node, opts);
 }
-}, function(modId) { var map = {"../../validators/is":1581324618275}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618291, function(require, module, exports) {
+}, function(modId) { var map = {"../../validators/is":1581492155538}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155554, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11262,8 +11262,8 @@ function createTypeAnnotationBasedOnTypeof(type) {
     throw new Error("Invalid typeof value");
   }
 }
-}, function(modId) { var map = {"../generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618292, function(require, module, exports) {
+}, function(modId) { var map = {"../generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155555, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11286,8 +11286,8 @@ function createUnionTypeAnnotation(types) {
     return (0, _generated.unionTypeAnnotation)(flattened);
   }
 }
-}, function(modId) { var map = {"../generated":1581324618271,"../../modifications/flow/removeTypeDuplicates":1581324618293}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618293, function(require, module, exports) {
+}, function(modId) { var map = {"../generated":1581492155534,"../../modifications/flow/removeTypeDuplicates":1581492155556}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155556, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11362,8 +11362,8 @@ function removeTypeDuplicates(nodes) {
 
   return types;
 }
-}, function(modId) { var map = {"../../validators/generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618294, function(require, module, exports) {
+}, function(modId) { var map = {"../../validators/generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155557, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11442,8 +11442,8 @@ function cloneNode(node, deep = true) {
 
   return newNode;
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618295, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155558, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11458,8 +11458,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function clone(node) {
   return (0, _cloneNode.default)(node, false);
 }
-}, function(modId) { var map = {"./cloneNode":1581324618294}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618296, function(require, module, exports) {
+}, function(modId) { var map = {"./cloneNode":1581492155557}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155559, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11474,8 +11474,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function cloneDeep(node) {
   return (0, _cloneNode.default)(node);
 }
-}, function(modId) { var map = {"./cloneNode":1581324618294}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618297, function(require, module, exports) {
+}, function(modId) { var map = {"./cloneNode":1581492155557}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155560, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11492,8 +11492,8 @@ function cloneWithoutLoc(node) {
   newNode.loc = null;
   return newNode;
 }
-}, function(modId) { var map = {"./clone":1581324618295}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618298, function(require, module, exports) {
+}, function(modId) { var map = {"./clone":1581492155558}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155561, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11511,8 +11511,8 @@ function addComment(node, type, content, line) {
     value: content
   }]);
 }
-}, function(modId) { var map = {"./addComments":1581324618299}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618299, function(require, module, exports) {
+}, function(modId) { var map = {"./addComments":1581492155562}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155562, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11537,7 +11537,7 @@ function addComments(node, type, comments) {
   return node;
 }
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618300, function(require, module, exports) {
+__DEFINE__(1581492155563, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11552,8 +11552,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function inheritInnerComments(child, parent) {
   (0, _inherit.default)("innerComments", child, parent);
 }
-}, function(modId) { var map = {"../utils/inherit":1581324618301}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618301, function(require, module, exports) {
+}, function(modId) { var map = {"../utils/inherit":1581492155564}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155564, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11571,7 +11571,7 @@ function inherit(key, child, parent) {
   }
 }
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618302, function(require, module, exports) {
+__DEFINE__(1581492155565, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11586,8 +11586,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function inheritLeadingComments(child, parent) {
   (0, _inherit.default)("leadingComments", child, parent);
 }
-}, function(modId) { var map = {"../utils/inherit":1581324618301}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618303, function(require, module, exports) {
+}, function(modId) { var map = {"../utils/inherit":1581492155564}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155566, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11609,8 +11609,8 @@ function inheritsComments(child, parent) {
   (0, _inheritInnerComments.default)(child, parent);
   return child;
 }
-}, function(modId) { var map = {"./inheritTrailingComments":1581324618304,"./inheritLeadingComments":1581324618302,"./inheritInnerComments":1581324618300}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618304, function(require, module, exports) {
+}, function(modId) { var map = {"./inheritTrailingComments":1581492155567,"./inheritLeadingComments":1581492155565,"./inheritInnerComments":1581492155563}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155567, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11625,8 +11625,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function inheritTrailingComments(child, parent) {
   (0, _inherit.default)("trailingComments", child, parent);
 }
-}, function(modId) { var map = {"../utils/inherit":1581324618301}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618305, function(require, module, exports) {
+}, function(modId) { var map = {"../utils/inherit":1581492155564}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155568, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11643,8 +11643,8 @@ function removeComments(node) {
 
   return node;
 }
-}, function(modId) { var map = {"../constants":1581324618278}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618306, function(require, module, exports) {
+}, function(modId) { var map = {"../constants":1581492155541}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155569, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11742,8 +11742,8 @@ const TSTYPEELEMENT_TYPES = _definitions.FLIPPED_ALIAS_KEYS["TSTypeElement"];
 exports.TSTYPEELEMENT_TYPES = TSTYPEELEMENT_TYPES;
 const TSTYPE_TYPES = _definitions.FLIPPED_ALIAS_KEYS["TSType"];
 exports.TSTYPE_TYPES = TSTYPE_TYPES;
-}, function(modId) { var map = {"../../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618307, function(require, module, exports) {
+}, function(modId) { var map = {"../../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155570, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11758,8 +11758,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function ensureBlock(node, key = "body") {
   return node[key] = (0, _toBlock.default)(node[key], node);
 }
-}, function(modId) { var map = {"./toBlock":1581324618308}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618308, function(require, module, exports) {
+}, function(modId) { var map = {"./toBlock":1581492155571}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155571, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11794,8 +11794,8 @@ function toBlock(node, parent) {
 
   return (0, _generated2.blockStatement)(blockNodes);
 }
-}, function(modId) { var map = {"../validators/generated":1581324618266,"../builders/generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618309, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/generated":1581492155529,"../builders/generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155572, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11812,8 +11812,8 @@ function toBindingIdentifierName(name) {
   if (name === "eval" || name === "arguments") name = "_" + name;
   return name;
 }
-}, function(modId) { var map = {"./toIdentifier":1581324618310}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618310, function(require, module, exports) {
+}, function(modId) { var map = {"./toIdentifier":1581492155573}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155573, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11839,8 +11839,8 @@ function toIdentifier(name) {
 
   return name || "_";
 }
-}, function(modId) { var map = {"../validators/isValidIdentifier":1581324618311}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618311, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/isValidIdentifier":1581492155574}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155574, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11866,7 +11866,7 @@ function isValidIdentifier(name, reserved = true) {
   return _esutils.default.keyword.isIdentifierNameES6(name);
 }
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618312, function(require, module, exports) {
+__DEFINE__(1581492155575, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11882,8 +11882,8 @@ function toComputedKey(node, key = node.key || node.property) {
   if (!node.computed && (0, _generated.isIdentifier)(key)) key = (0, _generated2.stringLiteral)(key.name);
   return key;
 }
-}, function(modId) { var map = {"../validators/generated":1581324618266,"../builders/generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618313, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/generated":1581492155529,"../builders/generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155576, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11914,8 +11914,8 @@ function toExpression(node) {
 
   return node;
 }
-}, function(modId) { var map = {"../validators/generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618314, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155577, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11964,8 +11964,8 @@ toKeyAlias.increment = function () {
     return toKeyAlias.uid++;
   }
 };
-}, function(modId) { var map = {"../validators/generated":1581324618266,"../clone/cloneNode":1581324618294,"../modifications/removePropertiesDeep":1581324618315}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618315, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/generated":1581492155529,"../clone/cloneNode":1581492155557,"../modifications/removePropertiesDeep":1581492155578}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155578, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -11983,8 +11983,8 @@ function removePropertiesDeep(tree, opts) {
   (0, _traverseFast.default)(tree, _removeProperties.default, opts);
   return tree;
 }
-}, function(modId) { var map = {"../traverse/traverseFast":1581324618316,"./removeProperties":1581324618317}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618316, function(require, module, exports) {
+}, function(modId) { var map = {"../traverse/traverseFast":1581492155579,"./removeProperties":1581492155580}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155579, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12013,8 +12013,8 @@ function traverseFast(node, enter, opts) {
     }
   }
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618317, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155580, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12045,8 +12045,8 @@ function removeProperties(node, opts = {}) {
     node[sym] = null;
   }
 }
-}, function(modId) { var map = {"../constants":1581324618278}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618318, function(require, module, exports) {
+}, function(modId) { var map = {"../constants":1581492155541}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155581, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12070,8 +12070,8 @@ function toSequenceExpression(nodes, scope) {
 
   return result;
 }
-}, function(modId) { var map = {"./gatherSequenceExpressions":1581324618319}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618319, function(require, module, exports) {
+}, function(modId) { var map = {"./gatherSequenceExpressions":1581492155582}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155582, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12145,8 +12145,8 @@ function gatherSequenceExpressions(nodes, scope, declars) {
     return (0, _generated2.sequenceExpression)(exprs);
   }
 }
-}, function(modId) { var map = {"../retrievers/getBindingIdentifiers":1581324618320,"../validators/generated":1581324618266,"../builders/generated":1581324618271,"../clone/cloneNode":1581324618294}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618320, function(require, module, exports) {
+}, function(modId) { var map = {"../retrievers/getBindingIdentifiers":1581492155583,"../validators/generated":1581492155529,"../builders/generated":1581492155534,"../clone/cloneNode":1581492155557}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155583, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12250,8 +12250,8 @@ getBindingIdentifiers.keys = {
   VariableDeclaration: ["declarations"],
   VariableDeclarator: ["id"]
 };
-}, function(modId) { var map = {"../validators/generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618321, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155584, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12296,8 +12296,8 @@ function toStatement(node, ignore) {
   node.type = newType;
   return node;
 }
-}, function(modId) { var map = {"../validators/generated":1581324618266,"../builders/generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618322, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/generated":1581492155529,"../builders/generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155585, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12386,8 +12386,8 @@ function valueToNode(value) {
 
   throw new Error("don't know how to turn this value into a node");
 }
-}, function(modId) { var map = {"../validators/isValidIdentifier":1581324618311,"../builders/generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618323, function(require, module, exports) {
+}, function(modId) { var map = {"../validators/isValidIdentifier":1581492155574,"../builders/generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155586, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12403,8 +12403,8 @@ function appendToMemberExpression(member, append, computed = false) {
   member.computed = !!computed;
   return member;
 }
-}, function(modId) { var map = {"../builders/generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618324, function(require, module, exports) {
+}, function(modId) { var map = {"../builders/generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155587, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12438,8 +12438,8 @@ function inherits(child, parent) {
   (0, _inheritsComments.default)(child, parent);
   return child;
 }
-}, function(modId) { var map = {"../constants":1581324618278,"../comments/inheritsComments":1581324618303}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618325, function(require, module, exports) {
+}, function(modId) { var map = {"../constants":1581492155541,"../comments/inheritsComments":1581492155566}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155588, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12453,8 +12453,8 @@ function prependToMemberExpression(member, prepend) {
   member.object = (0, _generated.memberExpression)(prepend, member.object);
   return member;
 }
-}, function(modId) { var map = {"../builders/generated":1581324618271}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618326, function(require, module, exports) {
+}, function(modId) { var map = {"../builders/generated":1581492155534}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155589, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12469,8 +12469,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function getOuterBindingIdentifiers(node, duplicates) {
   return (0, _getBindingIdentifiers.default)(node, duplicates, true);
 }
-}, function(modId) { var map = {"./getBindingIdentifiers":1581324618320}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618327, function(require, module, exports) {
+}, function(modId) { var map = {"./getBindingIdentifiers":1581492155583}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155590, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12526,8 +12526,8 @@ function traverseSimpleImpl(node, enter, exit, state, ancestors) {
 
   if (exit) exit(node, ancestors, state);
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618328, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155591, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12561,8 +12561,8 @@ function isBinding(node, parent, grandparent) {
 
   return false;
 }
-}, function(modId) { var map = {"../retrievers/getBindingIdentifiers":1581324618320}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618329, function(require, module, exports) {
+}, function(modId) { var map = {"../retrievers/getBindingIdentifiers":1581492155583}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155592, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12579,8 +12579,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function isBlockScoped(node) {
   return (0, _generated.isFunctionDeclaration)(node) || (0, _generated.isClassDeclaration)(node) || (0, _isLet.default)(node);
 }
-}, function(modId) { var map = {"./generated":1581324618266,"./isLet":1581324618330}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618330, function(require, module, exports) {
+}, function(modId) { var map = {"./generated":1581492155529,"./isLet":1581492155593}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155593, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12595,8 +12595,8 @@ var _constants = require("../constants");
 function isLet(node) {
   return (0, _generated.isVariableDeclaration)(node) && (node.kind !== "var" || node[_constants.BLOCK_SCOPED_SYMBOL]);
 }
-}, function(modId) { var map = {"./generated":1581324618266,"../constants":1581324618278}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618331, function(require, module, exports) {
+}, function(modId) { var map = {"./generated":1581492155529,"../constants":1581492155541}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155594, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12623,8 +12623,8 @@ function isImmutable(node) {
 
   return false;
 }
-}, function(modId) { var map = {"./isType":1581324618276,"./generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618332, function(require, module, exports) {
+}, function(modId) { var map = {"./isType":1581492155539,"./generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155595, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12692,8 +12692,8 @@ function isNodesEquivalent(a, b) {
 
   return true;
 }
-}, function(modId) { var map = {"../definitions":1581324618273}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618333, function(require, module, exports) {
+}, function(modId) { var map = {"../definitions":1581492155536}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155596, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12807,7 +12807,7 @@ function isReferenced(node, parent, grandparent) {
   return true;
 }
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618334, function(require, module, exports) {
+__DEFINE__(1581492155597, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12836,8 +12836,8 @@ function isScope(node, parent) {
 
   return (0, _generated.isScopable)(node);
 }
-}, function(modId) { var map = {"./generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618335, function(require, module, exports) {
+}, function(modId) { var map = {"./generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155598, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12852,8 +12852,8 @@ function isSpecifierDefault(specifier) {
     name: "default"
   });
 }
-}, function(modId) { var map = {"./generated":1581324618266}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618336, function(require, module, exports) {
+}, function(modId) { var map = {"./generated":1581492155529}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155599, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12870,8 +12870,8 @@ const RESERVED_WORDS_ES3_ONLY = new Set(["abstract", "boolean", "byte", "char", 
 function isValidES3Identifier(name) {
   return (0, _isValidIdentifier.default)(name) && !RESERVED_WORDS_ES3_ONLY.has(name);
 }
-}, function(modId) { var map = {"./isValidIdentifier":1581324618311}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1581324618337, function(require, module, exports) {
+}, function(modId) { var map = {"./isValidIdentifier":1581492155574}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1581492155600, function(require, module, exports) {
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -12888,7 +12888,7 @@ function isVar(node) {
     kind: "var"
   }) && !node[_constants.BLOCK_SCOPED_SYMBOL];
 }
-}, function(modId) { var map = {"./generated":1581324618266,"../constants":1581324618278}; return __REQUIRE__(map[modId], modId); })
-return __REQUIRE__(1581324618262);
+}, function(modId) { var map = {"./generated":1581492155529,"../constants":1581492155541}; return __REQUIRE__(map[modId], modId); })
+return __REQUIRE__(1581492155525);
 })()
 //# sourceMappingURL=index.js.map
